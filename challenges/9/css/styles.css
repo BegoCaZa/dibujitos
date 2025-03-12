@@ -10,4 +10,32 @@ Colors:
 }
 
 .square {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  top:25px;
+  left: 75px;
+  background-color: #243D83;
+}
+
+.square::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  top:50px;
+  left: 50px;
+  rotate: 15deg;
+  background-color: #6592CF;
+}
+
+.square::after {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 75px;
+  top:88px;
+  left: 88px;
+  rotate: 30deg;
+  background-color: #243D83;
 }

@@ -11,4 +11,38 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  top:100px;
+  left:100px;
+  background-color: #F7EC7D;
+  box-shadow: 60px 0 #e38f66;
+}
+
+
+.shape::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top:-15px;
+  left:180px;
+  border-radius: 100%;
+  background-color: #62306d;
+  box-shadow: 0 95px #62306d, -195px 0 #62306d, -195px 95px #62306d ;
+}
+
+.shape::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top:-10px;
+  left:130px;
+  border-radius: 100%;
+  background-color: #62306d;
+  box-shadow: 0px 100px #62306d;
+  
+
 }
