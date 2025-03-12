@@ -12,25 +12,24 @@ Colors:
 
 .shape {
   position: relative;
-  width: 150px;
+  content: "";
+  width: 500px;
   height: 150px;
-  rotate: 45deg;
-  top:75px;
-  left:125px;
-  background-color: #4CAAB3;
-  box-shadow: 0 0 0px 50px red;
+  top: 75px;
+  background-color: #4caab3;
+  z-index: -1;
 }
 
 .shape::after {
   position: absolute;
   content: "";
-  width: 500px;
+  width: 150px;
   height: 150px;
-  top:-5px;
-  left:-170px;
-  rotate: -45deg;
-  background-color: green;
-  z-index: -1;
+  rotate: 45deg;
+  top: 0px;
+  left: 125px;
+  background-color: #4caab3;
+  box-shadow: 0 0 0px 50px #222730;
 }
 
 .shape::before {
@@ -38,10 +37,9 @@ Colors:
   content: "";
   width: 50px;
   height: 50px;
-  top:50px;
-  left:50px;
+  top: 50px;
+  left: 175px;
   border-radius: 100%;
-  background-color: #393E46;
+  background-color: #393e46;
   z-index: 1;
 }
-
